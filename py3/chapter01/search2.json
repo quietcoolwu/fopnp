@@ -1,0 +1,91 @@
+{
+    "results": [
+        {
+            "place_id": "ChIJp_QsnIy0PYgRFF92kBVaTPA",
+            "types": [
+                "street_address"
+            ],
+            "formatted_address": "207 N Defiance St, Archbold, OH 43502, USA",
+            "address_components": [
+                {
+                    "long_name": "207",
+                    "types": [
+                        "street_number"
+                    ],
+                    "short_name": "207"
+                },
+                {
+                    "long_name": "North Defiance Street",
+                    "types": [
+                        "route"
+                    ],
+                    "short_name": "N Defiance St"
+                },
+                {
+                    "long_name": "Archbold",
+                    "types": [
+                        "locality",
+                        "political"
+                    ],
+                    "short_name": "Archbold"
+                },
+                {
+                    "long_name": "Fulton County",
+                    "types": [
+                        "administrative_area_level_2",
+                        "political"
+                    ],
+                    "short_name": "Fulton County"
+                },
+                {
+                    "long_name": "Ohio",
+                    "types": [
+                        "administrative_area_level_1",
+                        "political"
+                    ],
+                    "short_name": "OH"
+                },
+                {
+                    "long_name": "United States",
+                    "types": [
+                        "country",
+                        "political"
+                    ],
+                    "short_name": "US"
+                },
+                {
+                    "long_name": "43502",
+                    "types": [
+                        "postal_code"
+                    ],
+                    "short_name": "43502"
+                },
+                {
+                    "long_name": "1160",
+                    "types": [
+                        "postal_code_suffix"
+                    ],
+                    "short_name": "1160"
+                }
+            ],
+            "geometry": {
+                "viewport": {
+                    "southwest": {
+                        "lat": 41.5206050197085,
+                        "lng": -84.30803998029151
+                    },
+                    "northeast": {
+                        "lat": 41.5233029802915,
+                        "lng": -84.3053420197085
+                    }
+                },
+                "location": {
+                    "lat": 41.521954,
+                    "lng": -84.306691
+                },
+                "location_type": "ROOFTOP"
+            }
+        }
+    ],
+    "status": "OK"
+}

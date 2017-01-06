@@ -13,6 +13,7 @@ Connection: close\r\n\
 \r\n\
 """
 
+
 def geocode(address):
     sock = socket.socket()
     sock.connect(('maps.google.com', 80))
@@ -24,7 +25,11 @@ def geocode(address):
         if not more:
             break
         raw_reply += more
-    print(raw_reply.decode('utf-8'))
+    res = raw_reply.decode('utf-8')
+    print(res)
+    with open('search4.txt', 'w') as f:
+        f.write(res)
+
 
 if __name__ == '__main__':
     geocode('207 N. Defiance St, Archbold, OH')

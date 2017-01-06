@@ -7,4 +7,4 @@ import socket
 if __name__ == '__main__':
     hostname = 'maps.google.com'
     addr = socket.gethostbyname(hostname)
-    print('The IP address of {} is {}'.format(hostname, addr))
+    print('The IP address of {0} is {1}'.format(hostname, addr))

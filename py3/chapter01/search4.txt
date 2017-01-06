@@ -1,23 +1,82 @@
 HTTP/1.1 200 OK
-Content-Type: text/javascript; charset=UTF-8
-Vary: Accept-Language
-Date: Wed, 21 Jul 2010 16:10:38 GMT
+Content-Type: application/json; charset=UTF-8
+Date: Fri, 06 Jan 2017 13:36:10 GMT
+Expires: Sat, 07 Jan 2017 13:36:10 GMT
+Cache-Control: public, max-age=86400
+Access-Control-Allow-Origin: *
 Server: mafe
-Cache-Control: private, x-gzip-ok=""
 X-XSS-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+Accept-Ranges: none
+Vary: Accept-Language,Accept-Encoding
 Connection: close
 
 {
-  "name": "207 N. Defiance St, Archbold, OH",
-  "Status": {
-    "code": 200,
-    "request": "geocode"
-  },
-  "Placemark": [ {
-    ...
-    "Point": {
-      "coordinates": [ -84.3063479, 41.5228242, 0 ]
-    }
-  } ]
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "207",
+               "short_name" : "207",
+               "types" : [ "street_number" ]
+            },
+            {
+               "long_name" : "North Defiance Street",
+               "short_name" : "N Defiance St",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Archbold",
+               "short_name" : "Archbold",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Fulton County",
+               "short_name" : "Fulton County",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Ohio",
+               "short_name" : "OH",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "United States",
+               "short_name" : "US",
+               "types" : [ "country", "political" ]
+            },
+            {
+               "long_name" : "43502",
+               "short_name" : "43502",
+               "types" : [ "postal_code" ]
+            },
+            {
+               "long_name" : "1160",
+               "short_name" : "1160",
+               "types" : [ "postal_code_suffix" ]
+            }
+         ],
+         "formatted_address" : "207 N Defiance St, Archbold, OH 43502, USA",
+         "geometry" : {
+            "location" : {
+               "lat" : 41.521954,
+               "lng" : -84.306691
+            },
+            "location_type" : "ROOFTOP",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 41.5233029802915,
+                  "lng" : -84.3053420197085
+               },
+               "southwest" : {
+                  "lat" : 41.5206050197085,
+                  "lng" : -84.30803998029151
+               }
+            }
+         },
+         "place_id" : "ChIJp_QsnIy0PYgRFF92kBVaTPA",
+         "types" : [ "street_address" ]
+      }
+   ],
+   "status" : "OK"
 }
-
