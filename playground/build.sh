@@ -19,7 +19,7 @@ fi
 
 if ! echo "$(groups)" | grep -q docker
 then
-    sudo adduser vagrant docker
+    sudo adduser "$(whoami)" docker
     exec newgrp docker < ./build.sh
 fi
 
